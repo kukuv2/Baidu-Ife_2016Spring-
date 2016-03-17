@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            border: 0px;
+            margin: 0px;
+        }
+        .left{
+            background: silver;
+            width: 100px;
+        }
+        .center{
+            background: saddlebrown;
+        }
+        .right{
+            background: salmon;
+            width: 100px;
+        }
+
+        div{
+            height: 100px;
+        }
+
+        .div1{
+            width: 100%;
+        }
+        .div1 .left{
+            margin-left: -100%;
+            float: left;
+        }
+        .div1 .right{
+            margin-left: -100px;
+            float: left;
+        }
+        .div1 .centerWrapper{
+            float: left;
+            width: 100%;
+        }
+        .div1 .center{
+            margin: 0 100px;
+        }
+
+
+        .div2{
+            position: relative;
+        }
+        .div2 .left{
+            position: absolute;
+            left: 0;
+        }
+        .div2 .right{
+            position: absolute;
+            right:0;
+            top:0;
+        }
+        .div2 .center{
+            margin: 0 100px;
+        }
+
+        .div3 .left{
+            float: left;
+        }
+        .div3 .right{
+            float: right;
+        }
+        .div3 .center{
+            margin: 0 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="div1">
+    <div class="centerWrapper">
+        <div class="center">center</div>
+    </div>
+    <div class="left">left</div>
+    <div class="right">right</div>
+</div>
+<div class="div2">
+    <div class="left">left</div>
+    <div class="center">center</div>
+    <div class="right">right</div>
+</div>
+<div class="div3">
+    <div class="left">left</div>
+    <div class="right">right</div>
+    <div class="center">center</div>
+</div>
+</body>
+</html>
